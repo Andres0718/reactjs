@@ -2,7 +2,7 @@ import React from 'react'
 
 const ItemDetail = ({id, nombre, precio, img}) => {
     return (
-        <div>
+        <div className='contenedorItem'>
             <h2>Nombre: {nombre}</h2>
             <p>Precio: {precio}</p>
             <p>id: {id}</p>

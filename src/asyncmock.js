@@ -1,15 +1,15 @@
 const productos = [
-    { id: "1", nombre: "Yerba", precio: 500, img: "./img/yerba.jpg", idCat:"2" },
-    { id: "2", nombre: "Fideos", precio: 180, img: "./img/fideos.jpg", idCat:"2" },
-    { id: "3", nombre: "Arroz", precio: 200, img: "./img/arroz.jpg", idCat:"3" },
-    { id: "4", nombre: "Aceite", precio: 900, img: "./img/aceite.jpg", idCat:"3" },
+    { id: "1", nombre: "iPhone", precio: 500, img: "https://tiendasishop.com/media/catalog/product/i/p/iphone_15_pro_black_titanium_pdp_image_position-1__coes.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700", idCat:"2" },
+    { id: "2", nombre: "iPhone", precio: 180, img: "https://tiendasishop.com/media/catalog/product/i/p/iphone_15_pro_black_titanium_pdp_image_position-1__coes.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700", idCat:"2" },
+    { id: "3", nombre: "iPhone", precio: 200, img: "https://tiendasishop.com/media/catalog/product/i/p/iphone_15_pro_black_titanium_pdp_image_position-1__coes.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700", idCat:"3" },
+    { id: "4", nombre: "iPhone", precio: 900, img: "https://tiendasishop.com/media/catalog/product/i/p/iphone_15_pro_black_titanium_pdp_image_position-1__coes.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700", idCat:"3" },
 ]
 
 export const getProductos = () => {
     return new Promise(resolve => {
         setTimeout(() => {
             resolve(productos);
-        }, 2000)
+        }, 100)
     })
 }
 
@@ -18,7 +18,7 @@ export const getUnProducto = () => {
         setTimeout( () => {
             const producto = produsctos.find(item => item.id === id);
             resolve(producto);
-        }, 2000)
+        }, 100)
     })
 }
 
@@ -27,7 +27,7 @@ export const getProductosPorCategoria = (idCategoria) => {
         setTimeout(()=> {
            const productosCategoria = productos.filter(item => item.idCat === idCategoria);
            resolve(productosCategoria);
-        },2000)
+        },100)
     })
 
 }

@@ -1,6 +1,4 @@
 import React from 'react';
-import CartWidget from '../CartWidget/CartWidget';
-import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
@@ -21,7 +19,6 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <CartWidget />
     </header>
   )
 }
