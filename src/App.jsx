@@ -11,7 +11,6 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-
         <CarritoProvider>
         <Navbar/>
         <Routes>
@@ -23,8 +22,6 @@ const App = () => {
         </CarritoProvider>
       </BrowserRouter>
       
-
-
     </div>
   )
 }
